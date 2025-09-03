@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout roto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header, nav, main, aside, footer {
+      padding: 20px;
+      border: 2px solid black;
+    }
+
+    /* ❌ Problema: layout fijo con floats */
+    header {
+      background: lightblue;
+      height: 100px;
+    }
+
+    nav {
+      float: left;
+      width: 200px;
+      height: 600px;
+      background: lightgreen;
+    }
+
+    main {
+      float: left;
+      width: 800px;
+      height: 600px;
+      background: lightcoral;
+    }
+
+    aside {
+      float: left;
+      width: 300px;
+      height: 600px;
+      background: lightgoldenrodyellow;
+    }
+
+    footer {
+      clear: both;
+      background: lightgray;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>Encabezado</header>
+  <nav>Navegación</nav>
+  <main>Contenido principal</main>
+  <aside>Aside</aside>
+  <footer>Pie de página</footer>
+</body>
+</html>
